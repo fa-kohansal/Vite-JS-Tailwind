@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tailwind": "npx tailwindcss -i ./src/Tailwind/tailwind.css -o ./public/css/main.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17",
