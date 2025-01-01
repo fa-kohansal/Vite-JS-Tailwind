@@ -1,4 +1,6 @@
 import "../public/css/main.css";
+import"../public/css/style.css"
+import"../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("menu-button");
   const dropdownMenu = document.getElementById("dropdown-menu");
