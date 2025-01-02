@@ -11,3 +11,11 @@ export function locChoose(){
     
 }
 window.locChoose=locChoose;
+let womenItems=document.getElementById("womenItems");
+let women=document.getElementById("Women")
+women.addEventListener("mouseenter",()=>{
+    womenItems.classList.remove("hidden")
+})
+womenItems.addEventListener("mouseleave",()=>{
+    womenItems.classList.add("hidden")
+})
