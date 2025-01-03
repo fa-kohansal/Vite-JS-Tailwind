@@ -22,25 +22,41 @@ let saleItems = document.getElementById("saleItems");
 
 women.addEventListener("mouseenter", () => {
   womenItems.classList.remove("hidden");
+  menItems.classList.add("hidden");
+  saleItems.classList.add("hidden");
+  shopByItems.classList.add("hidden");
 });
 womenItems.addEventListener("mouseleave", () => {
   womenItems.classList.add("hidden");
+
 });
 men.addEventListener("mouseenter", () => {
   menItems.classList.remove("hidden");
+  womenItems.classList.add("hidden");
+  saleItems.classList.add("hidden");
+  shopByItems.classList.add("hidden");
 });
 menItems.addEventListener("mouseleave", () => {
   menItems.classList.add("hidden");
 });
 shopBy.addEventListener("mouseenter", () => {
   shopByItems.classList.remove("hidden");
+  menItems.classList.add("hidden");
+  womenItems.classList.add("hidden");
+  saleItems.classList.add("hidden");
+
 });
 shopByItems.addEventListener("mouseleave", () => {
   shopByItems.classList.add("hidden");
 });
 sale.addEventListener("mouseenter", () => {
   saleItems.classList.remove("hidden");
+  shopByItems.classList.add("hidden");
+  menItems.classList.add("hidden");
+  womenItems.classList.add("hidden");
 });
 saleItems.addEventListener("mouseleave", () => {
   saleItems.classList.add("hidden");
+  
 });
+
