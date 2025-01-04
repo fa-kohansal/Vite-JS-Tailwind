@@ -40,5 +40,4 @@ jobs:
           git push --force origin gh-pages
         env:
           TOKEN: ${{ secrets.PAT_TOKEN }}
-        with:
-          publish_dir: ./dist
+      
