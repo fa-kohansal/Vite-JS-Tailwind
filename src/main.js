@@ -59,4 +59,3 @@ saleItems.addEventListener("mouseleave", () => {
   saleItems.classList.add("hidden");
   
 });
-
