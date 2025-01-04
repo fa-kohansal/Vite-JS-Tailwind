@@ -23,6 +23,10 @@ jobs:
 
       - name: Build project
         run: npm run build
+      - name: Check TOKEN value
+        run: echo $TOKEN
+        env:
+          TOKEN: ${{ secrets.PAT_TOKEN }}
 
       - name: Deploy to GitHub Pages
         run: |
@@ -35,4 +39,6 @@ jobs:
           git commit -m "Deploy to GitHub Pages"
           git push --force origin gh-pages
         env:
-          PERSONAL_TOKEN: ${{ secrets.PAT_TOKEN }}
+          TOKEN: ${{ secrets.PAT_TOKEN }}
+        with:
+          publish_dir: ./dist
