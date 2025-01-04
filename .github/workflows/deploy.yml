@@ -33,6 +33,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git init
+          git remote remove origin
           git remote add origin https://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.com/fa-kohansal/Vite-JS-Tailwind.git
           git checkout -b gh-pages
           git add .
