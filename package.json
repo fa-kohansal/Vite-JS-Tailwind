@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tailwind": "npx tailwindcss -i ./src/Tailwind/tailwind.css -o ./public/css/main.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/Tailwind/tailwind.css -o ./public/css/main.css --watch",
+    "server":"json-server --watch db.json --port 3000"
+
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.5"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "json-server": "^1.0.0-beta.3"
   }
 }

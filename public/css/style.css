@@ -55,6 +55,14 @@ body{
     margin: 16px;
     cursor: pointer;
 }
+@keyframes fadein{
+    from{right:-100%;}
+    to{right: 100%;}
+}
+.BagsLink{
+    position: relative;
+    animation: fadein 10s infinite;
+}
 .headlineText{
     width: 100%;
     margin: 0 auto;

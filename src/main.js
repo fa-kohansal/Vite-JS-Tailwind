@@ -59,3 +59,6 @@ saleItems.addEventListener("mouseleave", () => {
   saleItems.classList.add("hidden");
   
 });
+
+let slide = document.querySelector(".linksImg");
+console.log(slide);
