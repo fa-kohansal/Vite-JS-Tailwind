@@ -60,5 +60,24 @@ saleItems.addEventListener("mouseleave", () => {
   
 });
 
-let slide = document.querySelector(".linksImg");
-console.log(slide);
+let fetchSlides=async()=>{
+  try{
+    let slides="";
+    let data = await fetch("http://localhost:3000/slides");
+    let res=await data.json();
+    slides = res.map((elem) => {
+      return `
+        <div class="linksImg relative ">
+            <h1 class="headlineText  absolute text-center top-6">${elem.title1}<br>${elem.title2}</h1>
+          <img  src="${elem.img}" alt="${elem.title1}">
+          </div>
+      `;
+    });
+    document.querySelector(".BagsLink ").innerHTML=slides.join("")
+  }catch(error){
+    console.log(error);
+    
+  }
+}
+fetchSlides();
+
